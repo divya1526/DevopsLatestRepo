@@ -25,3 +25,4 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     pathToPublish: '$(Build.ArtifactStagingDirectory)'
+- task: DownloadBuildArtifacts@0
