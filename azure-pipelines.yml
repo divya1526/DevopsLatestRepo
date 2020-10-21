@@ -19,5 +19,6 @@ steps:
   displayName: 'Run a multi-line script'
 - task: AzureWebApp@1
   inputs:
+    azureSubscription: 'testService'  
     appName: 'WebAppNew123'
     package: $(System.DefaultWorkingDirectory)/**/*.zip 
